@@ -1,14 +1,14 @@
 export const SITE = {
-  title: '潮流周刊',
-  author: 'Tw93',
-  description: '记录工程师 Tw93 的不枯燥生活，每周一发布，欢迎关注',
-  keywords: 'Tw93,Weekly,Blog,前端,macOS,MiaoYan,Pack,Swift',
+  title: '爱情的纹理',
+  author: 'Warn',
+  description: '记录自诩热爱生活的工程师 Warn 的简单生活，不定期更新写手',
+  keywords: 'Warn,Blog,lovetime,博客,前端,爱情的纹理',
   icon: 'https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png',
   pic: 'https://cdn.fliggy.com/upic/2XFNGI.png',
-  homePage: 'https://weekly.tw93.fun',
-  blogPage: 'https://tw93.fun/',
-  twitterId: 'HiTw93',
-  githubId: 'tw93',
-  repo: 'tw93/weekly'
+  homePage: 'https://www.715721.xyz',
+  blogPage: 'https://www.715721.xyz',
+  twitterId: 'fexWarn',
+  githubId: 'WangEN',
+  repo: 'WangEn/weekly'
 };
 

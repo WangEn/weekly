@@ -14,10 +14,10 @@ posts.splice(10);
 
 export const get = () =>
   rss({
-    title: '潮流周刊',
-    description: '记录 Tw93 潮流前端的日常生活',
-    site: 'https://weekly.tw93.fun/',
-    customData: `<image><url>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</url></image>`,
+    title: '爱情的纹理',
+    description: '记录自诩热爱生活的工程师 Warn 的简单生活',
+    site: 'https://www.715721.xyz/',
+    customData: `<image><url>https://pub-b18af89466c74e8aa9cd24048eedc556.r2.dev/weekly/weekly-icon.png</url></image>`,
     items: posts.map((item) => {
       const url = item.url;
       const oldTitle = url.split('/posts/')[1];

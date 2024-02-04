@@ -7,7 +7,7 @@ import { parse } from 'node-html-parser';
 import { SITE } from './src/config';
 
 const DEFAULT_FORMAT = 'YYYY/MM/DD';
-const WEEKLY_REPO_NAME = 'tw93/weekly';
+const WEEKLY_REPO_NAME = 'WangEn/weekly';
 
 function getCreateDateFormat(filePath) {
   return dayjs(fs.statSync(filePath).birthtime).format(DEFAULT_FORMAT);
@@ -23,7 +23,7 @@ function getWeeklyDateFormat(num) {
 }
 
 function getTwitterImg(num) {
-  return num >= 110 ? `https://weekly.tw93.fun/assets/${num}.jpg` : undefined;
+  return num >= 110 ? `https://www.715721.xyz/assets/${num}.jpg` : undefined;
 }
 
 function defaultLayoutPlugin() {

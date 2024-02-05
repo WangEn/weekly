@@ -1,0 +1,58 @@
+---
+import HeadCommon from '../components/HeadCommon.astro';
+import HeadSEO from '../components/HeadSEO.astro';
+import Header from '../components/Header/Header.astro';
+import Footer from '../components/Footer.astro'
+import { SITE } from '@/config';
+
+
+const pageTitle = "关于我";
+const identity = {
+  name: "Warn",
+  occupation: "前端工程师",
+  hobbies: ["阅读", "骑行", "畊练"],
+}
+const skills = ["HTML", "CSS", "JavaScript", "Vue", "Writing Docs"];
+const knows = ["React", "Astro", "Python", "Go", "Rust"];
+
+---
+<html lang="ch">
+  <head>
+    <HeadCommon />
+    <HeadSEO pageURL={SITE.homePage} content={{}} />
+    <title>{pageTitle}</title>
+  </head>
+
+  <body>
+    <Header />
+    <!-- <div
+        class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 mx-0 md:-mr-5 mr-0"
+      >
+        {allPosts.map((p) => <Card post={p} />)}
+      </div>-->
+    <div
+      class="mx-auto mt-16 mb-12 xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl md:box-border box-content md:px-0 px-3"
+    >
+      <!-- <h1>{pageTitle}</h1> -->
+      <h3>我的一二三</h3>
+      <ul>
+        <li>我的名字是{identity.name}。</li>
+        <li>我的职业是{identity.occupation}。</li>
+        {
+          identity.hobbies.length && (
+            <li>我平时喜欢做的事: {identity.hobbies.join(", ")}</li>
+          )
+        }
+      </ul>
+      <h3>常用技能</h3>
+      <ul>
+        {skills.map((s) => <li>{s}</li>)}
+      </ul>
+      <h3>一般技能</h3>
+      <ul>
+        {knows.map((s) => <li>{s}</li>)}
+      </ul>
+    </div> 
+    <Footer/>
+  </body>
+</html>
